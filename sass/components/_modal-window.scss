@@ -1,0 +1,242 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.2);
+    transition-property: opacity, transform; 
+    transition-duration: 250ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transform: scale(100%); 
+    opacity: 100%;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    
+}
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: opacity, transform; 
+    transition-duration: 250ms; 
+    transition-timing-function: var(--transition); 
+    transform: scale(100%); 
+    opacity: 100%;
+    }
+.close-btn__icon {
+    display: flex;
+    margin: auto;
+    width: 12px;
+    height: 12px;
+   fill: #000000;
+}
+.modal-window-h3 {
+    position: absolute;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+padding: 40px 40px;
+margin-bottom: 12px;
+}
+.modal-window-form {
+display: flex;
+flex-direction: column;
+padding: 93px 40px 40px;
+}
+.modal-window-form__label {
+    font-size: 12px;
+    line-height: 1.17em;
+    letter-spacing: 0.01em;
+    color: rgb(117, 117, 117);
+    margin-bottom: 4px
+}
+.modal-window-form__input {
+    display: flex;
+    margin-bottom: 10px;
+    min-width: 100%;
+    border-image: initial;
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+}
+.modal-window-form__textarea:hover,
+.modal-window-form__textarea:focus,
+.modal-window-form__textarea:active,
+.modal-window-form__input:hover,
+.modal-window-form__input:focus,
+.modal-window-form__input:active {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+.modal-icon-contact {
+    position: absolute;
+color: #212121;
+width: 18px;
+height: 18px;
+
+}
+.modal-window-form__textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    padding: 12px 16px;
+    min-width: 100%;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    transition: var(--transition)
+}
+.modal-window-form__textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+.bg-image-name {
+    position: absolute;
+    left: 52px;
+    top: 116px;
+width: 18px;
+height: 18px;
+
+}
+.bg-image-name:hover,
+.bg-image-name:focus,
+.bg-image-name:active {
+    fill: #2196F3;
+}
+
+.bg-image-phone {
+    position: absolute;
+    left: 52px;
+    top: 187px;
+width: 18px;
+height: 18px;
+}
+.bg-image-phone:hover,
+.bg-image-phone:focus,
+.bg-image-phone:active {
+    fill: #2196F3;
+}
+.bg-image-email {
+    position: absolute;
+    left: 52px;
+    top: 259px;
+width: 18px;
+height: 18px;
+}
+.bg-image-email:hover,
+.bg-image-email:focus,
+.bg-image-email:active {
+  fill: #2196F3;
+}
+.modal-window-form__terms {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.modal-window-form__terms a {
+    text-decoration: underline;
+    color: #2196f3;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.modal-window-form__terms::before {
+margin-right: 8px;
+}
+
+.modal-window-form__checkbox {
+    /* Oświadczam iż akceptuję Regulamin i Politykę Prywatności. */
+
+max-width: 395px;
+height: 24px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+letter-spacing: 0.03em;
+color: #757575;
+width: 16px;
+height: 15px;
+margin-right: 8px;
+}
+
+.modal-window-form__terms::before{
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    outline: 1px solid #000;
+}
+.modal-window-form__checkbox:checked + .modal-window-form__terms::before {
+   background-color: #2196F3;
+   border: 3px solid #fff;
+   background-image: url(../images/icon-checkbox-vector.svg);
+}
+.hidden {
+    display: none;
+}
+  
+
+.modal-window-form__button {
+    align-self: center;
+    background-color: #2196F3;
+    border: 0px;
+    border-radius: 4px;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+}

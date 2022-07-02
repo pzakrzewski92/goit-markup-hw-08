@@ -1,0 +1,73 @@
+.team {
+    background: #F5F4FA;
+   
+}
+.team__header {
+font-weight: 700;
+font-size: 35px;
+line-height: 1.2em;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+text-align: center;
+}
+.team__list {
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+margin-left: -30px;
+margin-bottom: -30px;
+}
+.team__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+/* material shadow v1 */
+    max-width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 10px;
+}
+
+
+.team__item figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.team__item img {
+max-width: 270px;
+max-height: 260px;
+display: block;
+margin: 0px;
+padding: 0px;}
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+.team__item h3 {
+    display: block;
+font-size: 1.17em;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #212121;
+}

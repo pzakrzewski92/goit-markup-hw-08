@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 14,
+    "liveSassCompile.settings.autoprefix": [
+        
+
+    
+    ],
+    "liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null
+        },
+        // You can add more
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        },  
+    ]
+}

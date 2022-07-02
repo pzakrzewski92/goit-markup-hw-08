@@ -1,0 +1,46 @@
+.clients__header {
+    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+    }
+    .clients {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .clients__item {
+        display: flex;
+        justify-content: center;
+        height: 92px;
+        min-width: 170px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        object-fit: contain;
+        fill: #afb1b8;
+     
+    }
+    .clients__item:hover, .clients__item:focus {
+        fill: #2196f3;
+        border: 1px solid #2196f3;
+           
+        }
+    .clients__image {
+        display: flex;
+        align-self: center;
+        color: currentcolor;
+        width: 106px;
+        height: 60.04px;
+      
+    }
