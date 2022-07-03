@@ -1,15 +1,15 @@
-.container {
+/*.container {
   width: 100%;
   padding: 0 10px;
-}
+}*/
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px){
 .container {
   display: block;
   justify-items: center;
   max-width: 767px;
   margin: 0 auto;
-  padding: 0 31px;
+  padding: 0 15px;
   align-items: center;
 }
 }
