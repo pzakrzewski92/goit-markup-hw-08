@@ -2,6 +2,21 @@
     color: #fff;
     text-align: center;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .main__background {
+        max-width: 1600px;
+    padding: 200px 0;
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/mobile/Header img.img);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 .main__background {
     max-width: 1600px;
 padding: 200px 0;
@@ -12,6 +27,7 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 margin: 0 auto;
+}
 }
 
 .main__button {
