@@ -654,6 +654,11 @@ a.item.current-page {
   transition: color(#2196F3);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu__contacts, .menu__contact, .icon-envelope, .icon-smartphone {
+    display: none;
+  }
+}
 .menu__contacts {
   display: flex;
   flex-wrap: wrap;
@@ -661,21 +666,22 @@ a.item.current-page {
   list-style-type: none;
 }
 
-.menu__contact {
-  display: flex;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-  align-items: center;
-  padding: 10px;
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .menu__contact {
+    display: flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px;
+    margin-left: 50px;
+  }
 }
-
 .icon-envelope {
   width: 16px;
   height: 12px;
@@ -1084,6 +1090,11 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .services__head, .services, .services__item {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .services__head, .services, .services__item {
     display: none;
   }

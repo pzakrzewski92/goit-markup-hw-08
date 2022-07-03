@@ -90,13 +90,18 @@
         transition: color(#2196F3)
     }
     
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        .menu__contacts, .menu__contact, .icon-envelope, .icon-smartphone {
+            display: none;
+        }  
+    }
     .menu__contacts {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         list-style-type: none;
     }
-    
+    @media screen and (min-width: 768px) {
     .menu__contact {
     display: flex;
     font-family: 'Roboto';
@@ -110,7 +115,7 @@
     align-items: center;
     padding: 10px;
     margin-left: 50px;
-    }
+    } }
     
     .icon-envelope {
         width: 16px;
