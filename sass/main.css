@@ -965,7 +965,7 @@ body {
   fill: #2196F3;
 }
 
-.modal-window-form__terms {
+.modal-window-form-terms {
   display: inline-flex;
   align-items: center;
   align-self: center;
@@ -978,7 +978,7 @@ body {
   margin-bottom: 30px;
 }
 
-.modal-window-form__terms a {
+.modal-window-form-terms a {
   text-decoration: underline;
   color: #2196f3;
   font-size: 14px;
@@ -990,8 +990,10 @@ body {
   margin-right: 8px;
 }
 
-.modal-window-form__checkbox {
+.modal-window-form-checkbox {
   /* Oświadczam iż akceptuję Regulamin i Politykę Prywatności. */
+  position: absolute;
+  opacity: 0;
   max-width: 395px;
   height: 24px;
   font-family: "Roboto";
@@ -1005,24 +1007,22 @@ body {
   width: 16px;
   height: 15px;
   margin-right: 8px;
+  background-image: url(/images/icon-checkbox-vector.svg);
 }
 
-.modal-window-form__terms::before {
+.modal-window-form-terms::before {
   display: inline-block;
   content: "";
   width: 16px;
   height: 16px;
   outline: 1px solid #000;
+  margin-right: 8px;
 }
 
-.modal-window-form__checkbox:checked + .modal-window-form__terms::before {
-  background-color: #2196F3;
-  border: 3px solid #fff;
-  background-image: url(../images/icon-checkbox-vector.svg);
-}
-
-.hidden {
-  display: none;
+.modal-window-form-checkbox:checked + .modal-window-form-terms::before {
+  background-image: url(../images/vector-checkbox-checked.svg);
+  animation: var(--transition);
+  outline: none;
 }
 
 .modal-window-form__button {
