@@ -58,7 +58,6 @@ background: #2F303A;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .footer__logo {
-        display: block;
         font-family: 'raleway';
         font-style: normal;
         font-weight: 700;
@@ -119,8 +118,9 @@ color: #2196F3;}
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .footer__address {
         display: flex;
+        flex-direction: column;
         margin: 0px;
-        justify-content: center;
+        justify-items: center;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
