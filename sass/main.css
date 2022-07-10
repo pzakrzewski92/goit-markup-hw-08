@@ -904,7 +904,7 @@ body {
 
 .modal {
   display: flex;
-  position: relative;
+  position: fixed;
   max-width: 450px;
   min-height: 581px;
   background-color: #fff;
