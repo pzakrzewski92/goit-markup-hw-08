@@ -888,6 +888,7 @@ body {
   }
 }
 .backdrop {
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -902,13 +903,12 @@ body {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
+  display: flex;
+  position: relative;
+  max-width: 450px;
   min-height: 581px;
   background-color: #fff;
+  margin: auto;
 }
 
 .close-btn {
@@ -954,6 +954,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 93px 40px 40px;
+  margin: auto;
 }
 
 .modal-window-form__label {
@@ -1061,27 +1062,52 @@ body {
   fill: #2196F3;
 }
 
-.modal-window-form-terms {
-  display: inline-flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin-bottom: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-window-form-terms {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 30px;
+  }
 }
-
-.modal-window-form-terms a {
-  text-decoration: underline;
-  color: #2196f3;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 768px) {
+  .modal-window-form-terms {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 30px;
+  }
 }
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-window-form-terms a {
+    text-decoration: underline;
+    color: #2196f3;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-window-form-terms a {
+    text-decoration: underline;
+    color: #2196f3;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
 .modal-window-form__terms::before {
   margin-right: 8px;
 }
