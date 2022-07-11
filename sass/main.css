@@ -10,11 +10,13 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #ececec;
     padding: 0 15px;
     margin: auto;
-    height: 60px;
-    max-width: 480px;
+    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -160,12 +162,13 @@ body {
   color: #fff;
 }
 
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
-
 .mobile-menu .link {
   display: block;
   padding: 10px;
@@ -173,6 +176,16 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-mobile-menu {
+    display: none;
+  }
+}
 .clients__header {
   height: 42px;
   font-family: "Roboto";
@@ -704,6 +717,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu {
     display: flex;
+    justify-content: space-between;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -1171,6 +1185,7 @@ body {
 .portfolio__buttons {
   margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
 }
