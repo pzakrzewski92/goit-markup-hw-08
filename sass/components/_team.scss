@@ -1,25 +1,12 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
     .team {
         background: #F5F4FA;
        margin-top: 60px;
        max-width: 100%;
     }  
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .team {
-        background: #F5F4FA;
-       margin-top: 60px;
-    }  
-}
-@media screen and (min-width: 1200px) {
-    .team {
-        background: #F5F4FA;
-       margin-top: 60px;
-    }  
-}
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
     .team__header{
 font-family: 'Roboto';
 font-style: normal;
@@ -32,7 +19,7 @@ letter-spacing: 0.03em;
 color: #212121;
 margin: 60px 0px 30px 0px;
     }
-}
+
 
 @media screen and (min-width: 1200px) {
 .team__header {
@@ -45,7 +32,7 @@ text-align: center;
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
     .team__list {
         list-style-type: none;
         display: flex;
@@ -55,12 +42,12 @@ text-align: center;
         }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .team__list {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
-        /*in progress*/
+        justify-content: center;
         }    
 }
 @media screen and (min-width: 1200px) {
@@ -73,14 +60,13 @@ margin-bottom: -30px;
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
     .team__item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         background-color: #fff;
-        margin: 30px 15px 30px 15px;
+        margin-bottom: 30px;
         
         text-decoration: none;
         font-family: 'Roboto';
@@ -92,13 +78,11 @@ margin-bottom: -30px;
         letter-spacing: 0.03em;
         color: #757575;
     /* material shadow v1 */
-        min-width: 450px;
-        height: 622px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) {
     .team__item {
         display: flex;
         flex-direction: column;
@@ -117,7 +101,7 @@ margin-bottom: -30px;
         letter-spacing: 0.03em;
         color: #757575;
     /* material shadow v1 */
-        max-width: 270px;
+        width: 100%
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         margin-top: 10px;
@@ -143,7 +127,7 @@ margin-bottom: -30px;
     letter-spacing: 0.03em;
     color: #757575;
 /* material shadow v1 */
-    max-width: 270px;
+    max-width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     
@@ -156,18 +140,15 @@ margin-bottom: -30px;
     align-items: center;
     padding: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
     .team__item img {
-        max-width: 100%;
-        height: 460px;
+        width: 100%;
         display: block;
-        margin: 0px;
-        padding: 0px;}
+        }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .team__item img {
-        max-width: 100%;
-        height: 460px;
+        width: 100%;
         display: block;
         margin: 0px;
         padding: 0px;}
