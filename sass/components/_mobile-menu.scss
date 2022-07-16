@@ -104,7 +104,7 @@ body {
     transition: transform 250ms ease-in-out;
   }
   
-  .mobile-menu-container.is-open {
+  .mobile-menu-container.is-hidden {
     transform: translateX(0);
   }
   
@@ -114,7 +114,11 @@ body {
     right: 16px;
     color: #fff;
   }
-  
+  .mobile-menu__close-btn {
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+  }
   
 
   .mobile-menu .link {
@@ -123,6 +127,13 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+}
   @media screen and (min-width: 768px){
     .mobile-menu {
       display: none;
