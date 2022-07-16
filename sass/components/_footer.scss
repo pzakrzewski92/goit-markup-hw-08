@@ -1,50 +1,22 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    .footer {
-        font-style: normal;
-        background: #2F303A;
-        color: #fff;
-        padding: 60px 0;
-        text-decoration: none;
-        display: block;
-    background: #2F303A;
-        } 
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer {
-        font-style: normal;
-        background: #2F303A;
-        color: #fff;
+        background-color: #2f303a;
         padding: 60px 0;
-        text-decoration: none;
-        display: block;
-    background: #2F303A;
         } 
-}
-@media screen and (min-width: 1200px) {
-.footer {
-    font-style: normal;
-    background: #2F303A;
-    color: #fff;
-    padding: 60px 0;
-    text-decoration: none;
-    display: block;
-background: #2F303A;
-    }
-}
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
     .footer--container {
         display: flex;
         flex-direction: column;
         padding: 0 15px;
         justify-content: center;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) {
     .footer--container {
         display: flex;
-        padding: 0 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
@@ -56,7 +28,7 @@ background: #2F303A;
     justify-content: center;
 }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
     .footer__logo {
         display: flex;
         font-family: 'raleway';
@@ -70,8 +42,8 @@ background: #2F303A;
         color: #fff;
         justify-content: center;
 }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) {
     .footer__logo {
         display: block;
         font-family: 'raleway';
@@ -105,16 +77,14 @@ background: #2F303A;
     .footer__logo span {
         color: #2196F3;}
 
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
     .footer__address {
         display: flex;
         flex-direction: column;
         margin: auto;
         align-items: center;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) {
     .footer__address {
         margin-right: 70px;
     }
@@ -153,7 +123,7 @@ color: rgba(255, 255, 255, 1);
 .footer--container {
     display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
     .footer__social {
         display: flex;
         flex-direction: column;
@@ -162,8 +132,8 @@ color: rgba(255, 255, 255, 1);
         margin: 0px;
         padding-top: 60px;
     } 
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px) {
     .footer__social {
         display: flex;
         flex-direction: column;
@@ -183,6 +153,7 @@ color: rgba(255, 255, 255, 1);
 }
 .footer__social-header {
     font-style: normal;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -217,7 +188,7 @@ color: rgba(255, 255, 255, 1);
     background-color: #2196F3;
     cursor: pointer;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
     .newsletter {
         display: flex;
         flex-direction: column;
@@ -225,7 +196,7 @@ color: rgba(255, 255, 255, 1);
         padding-top: 12px;
         margin-top: 60px;
         }   
-}
+
 @media screen and (min-width: 1200px) {
 .newsletter {
 display: flex;
@@ -249,7 +220,7 @@ padding-top: 12px;
 .newsletter__form {
 display: flex;
 flex-direction: column;
-align-content: center;
+align-items: center;
 min-width: 100%;
 margin: 0px;
 }
