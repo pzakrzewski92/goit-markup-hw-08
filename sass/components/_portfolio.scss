@@ -2,8 +2,19 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    
+    width: 100%;
     }
+
+    @media screen and (min-width: 768px){
+        .portfolio__item {
+        flex-basis: calc(50% - 30px)
+    }
+}
+@media screen and (min-width: 1200px) {
+    .portfolio__item {
+flex-basis: calc(33.3333333333% - 30px)
+    }
+}
     .portfolio__item { 
         display: flex;
         background-color: #fff;
@@ -59,6 +70,7 @@
         position: relative;
         overflow: hidden;
         display: block;
+        width: 100%;
     }
     
     .portfolio__description {

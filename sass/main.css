@@ -314,8 +314,8 @@ body {
 @media screen and (min-width: 1200px) {
   .footer--container {
     display: flex;
-    padding: 0 15px;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: start;
   }
 }
 .footer__logo {
@@ -367,13 +367,12 @@ body {
 .footer__address {
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .footer__address {
-    margin-right: 70px;
+    flex-basis: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -494,8 +493,9 @@ body {
 @media screen and (min-width: 1200px) {
   .newsletter {
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
     padding-top: 12px;
+    margin-top: 0px;
   }
 }
 .newsletter__head {
@@ -535,6 +535,11 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .newsletter__form-input {
+    width: 450px;
+  }
+}
 .newsletter__form-input:hover,
 .newsletter__form-input:active {
   outline: none;
@@ -578,35 +583,14 @@ body {
   width: 100%;
   padding: 0 10px;
 }*/
-@media screen and (min-width: 320px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-  }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-  }
-}
+
 :root {
   --black: #000000;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -819,7 +803,7 @@ a.item.current-page {
   transition: color(#2196F3);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
   .menu__contacts, .menu__contact {
     display: none;
   }
@@ -827,26 +811,29 @@ a.item.current-page {
 @media screen and (min-width: 768px) {
   .menu__contacts {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     list-style-type: none;
-    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__contacts {
+    flex-direction: row;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
   .menu__contact {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-family: "Roboto";
-    font-style: normal;
+    align-items: center;
+    font-size: 12px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+    font-style: normal;
+    text-transform: lowercase;
     color: #757575;
-    text-decoration: none;
-    align-items: start;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1279,8 +1266,19 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc(33.3333333333% - 30px);
+  }
+}
 .portfolio__item {
   display: flex;
   background-color: #fff;
@@ -1341,6 +1339,7 @@ body {
   position: relative;
   overflow: hidden;
   display: block;
+  width: 100%;
 }
 
 .portfolio__description {
@@ -1529,7 +1528,7 @@ body {
     justify-content: center;
     align-content: center;
     background-color: #fff;
-    margin-left: 30px;
+    margin-left: auto;
     margin-bottom: 30px;
     text-decoration: none;
     font-family: "Roboto";
@@ -1549,12 +1548,13 @@ body {
 @media screen and (min-width: 1200px) {
   .team__item {
     display: flex;
+    flex-basis: calc(25% - 30px);
     flex-direction: column;
     justify-content: center;
     align-content: center;
     background-color: #fff;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: auto;
     margin-bottom: 30px;
     text-decoration: none;
     font-family: "Roboto";
@@ -1633,6 +1633,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .testimonials {
+    flex-wrap: nowrap;
     margin-bottom: 94px;
   }
 }
