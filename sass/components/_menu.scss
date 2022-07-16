@@ -9,6 +9,8 @@
 @media screen and (min-width: 768px) {
     .menu {
         display: flex;
+        justify-content: space-between;
+        width: 100%;
         align-items: center;
         font-family: 'Roboto';
         font-style: normal;
@@ -37,6 +39,7 @@
     color:#212121;
     position: relative;
     display: flex;
+    padding: 28px;
     }
     /*transition */
     .menu__item:hover, .menu__contact:hover,
