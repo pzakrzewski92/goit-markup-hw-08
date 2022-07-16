@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet"/>
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">  
-    <link rel="stylesheet" href="css/styles.css"/>
+    <!--<link rel="stylesheet" href="css/styles.css"/>-->
     <link rel="stylesheet" href="css/main.min.css"/>
     <link rel="modern-normalize" href="/modern-normalize/modern-normalize.css"/>
 </head>
@@ -44,6 +44,12 @@
         +48 111 111 111
     </a></li>
     </ul>
+    <button class="btn-mobile-menu" type="button" js-open-menu>
+      <svg class="btn-mobile-menu__icon"
+      viewBox="0 0 24 16">
+  <use href="images/icons.svg#icon-hamburger-menu"></use>
+      </svg>
+  </button>
 </div>
 </header>
 <main>
@@ -317,5 +323,49 @@
       </section>
   </div>
   </footer>
+  <div class="mobile-menu--container is-hidden"js-menu-container>
+    <div class="mobile-menu">
+        <button type="button" class="mobile-menu__close-btn" js-close-menu>
+        X
+    </button>
+
+
+    <ul class="mobile-menu__navigation-list">
+        <li class="mobile-menu__navigation-item">
+            <a href="index.html" class="mobile-menu__navigation-link">Agencja</a>
+        </li>
+        <li class="mobile-menu__navigation-item">
+            <a href="portfolio.html" class="mobile-menu__navigation-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__navigation-item">
+            <a href="" class="mobile-menu__navigation-link">Kontakt</a>
+        </li>
+    </ul>
+    <ul class="mobile-menu__contact-list">
+        <li class="mobile-menu__contact-item">
+            <a href="tel:48111111111"
+                class="mobile-menu__contact-link mobile-menu__contact-link--phone">&#43;48&nbsp111&nbsp111&nbsp111</a>
+        </li>
+        <li class="mobile-menu__contact-item">
+            <a href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-link mobile-menu__contact-link--mail">info&#64;devstudio.com</a>
+        </li>
+    </ul>
+    <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link mobile-menu__social-link--line">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link mobile-menu__social-link--line">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link mobile-menu__social-link--line">Linkedin</a>
+        </li>
+    </ul>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
