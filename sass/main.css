@@ -961,6 +961,7 @@ body {
 .backdrop {
   display: flex;
   position: fixed;
+  justify-content: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -975,13 +976,26 @@ body {
 
 .modal {
   display: flex;
-  position: fixed;
+  position: absolute;
+  justify-content: center;
   max-width: 450px;
   min-height: 581px;
   background-color: #fff;
   margin: auto;
+  align-self: center;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    max-width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    margin: auto;
+  }
+}
 .close-btn {
   position: absolute;
   top: 8px;
@@ -1017,8 +1031,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding: 40px 40px;
-  margin-bottom: 12px;
+  margin: 40px 40px 12px;
 }
 
 .modal-window-form {
