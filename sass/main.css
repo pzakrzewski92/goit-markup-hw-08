@@ -189,13 +189,12 @@ body {
   color: #fff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
 .mobile-menu .link {
   display: block;
   padding: 10px;
