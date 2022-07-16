@@ -16,7 +16,6 @@
         list-style-type: none;
         margin-left: -30px;
         margin-bottom: -30px;
-        width: 100%;
     }
     
     .clients__item {
@@ -26,7 +25,6 @@
 
     @media screen and (min-width: 768px) {
         .clients__item {
-            display: flex;
             flex-basis: 33.3333%;
              } 
     }
@@ -38,6 +36,7 @@
     .clients__link {
         display: flex;
         height: 92px;
+        justify-content: center;
             border: 1px solid #afb1b8;
             border-radius: 4px;
             cursor: pointer;
