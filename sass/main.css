@@ -1082,6 +1082,14 @@ body {
   border-radius: 4px;
 }
 
+.modal-window-form__label:focus-within svg {
+  fill: #2196f3;
+}
+
+.modal-window-form__label:hover-within svg {
+  fill: #2196f3;
+}
+
 .modal-window-form__textarea:hover,
 .modal-window-form__textarea:focus,
 .modal-window-form__textarea:active,
