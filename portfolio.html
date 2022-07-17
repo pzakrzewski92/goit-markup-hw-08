@@ -44,12 +44,13 @@
         +48 111 111 111
     </a></li>
     </ul>
-    <button class="btn-mobile-menu" type="button" .js-open-menu>
-      <svg class="btn-mobile-menu__icon"
-      viewBox="0 0 24 16">
-  <use href="images/icons.svg#icon-hamburger-menu"></use>
-      </svg>
-  </button>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <!-- <button class="btn-mobile-menu" type="button" js-open-menu>-->
+           <svg class="btn-mobile-menu__icon"
+           viewBox="0 0 24 16">
+       <use href="images/icons.svg#icon-hamburger-menu"></use>
+           </svg>
+       </button> 
 </div>
 </header>
 <main>
@@ -323,24 +324,32 @@
       </section>
   </div>
   </footer>
-  <div class="mobile-menu--container is-open" js-menu-container>
-    <div class="mobile-menu">
-        <button type="button" class="mobile-menu__close-btn" js-close-menu>
-        X
+  <div class="mobile-menu--container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
     </button>
 
-
-    <ul class="mobile-menu__navigation-list">
-        <li class="mobile-menu__navigation-item">
-            <a href="index.html" class="mobile-menu__navigation-link">Agencja</a>
-        </li>
-        <li class="mobile-menu__navigation-item">
-            <a href="portfolio.html" class="mobile-menu__navigation-link">Portfolio</a>
-        </li>
-        <li class="mobile-menu__navigation-item">
-            <a href="" class="mobile-menu__navigation-link">Kontakt</a>
-        </li>
+    <ul class="mobile-menu">
+      <li><a href="" class="mobile-menu__link">Agencja</a></li>
+      <li><a href="" class="mobile-menu__link">Portfolio</a></li>
+      <li><a href="" class="mobile-menu__link">Kontakt</a></li>
+     
     </ul>
+  
+
+
     <ul class="mobile-menu__contact-list">
         <li class="mobile-menu__contact-item">
             <a href="tel:48111111111"
@@ -366,6 +375,18 @@
         </li>
     </ul>
 </div>
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
+
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
