@@ -1445,6 +1445,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: -30px;
   margin-left: -30px;
+  justify-content: center;
 }
 
 .services__item {
@@ -1692,6 +1693,7 @@ body {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
