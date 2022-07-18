@@ -688,18 +688,18 @@ body {
     flex-direction: column;
     max-width: 100%;
     min-height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/Header img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header-img.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .main__background {
     max-width: 100%;
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/Header img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header-img.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
