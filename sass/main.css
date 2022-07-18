@@ -643,6 +643,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 :root {
@@ -682,19 +683,18 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .main__background {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    min-height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header-img.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-  }
+.main__background {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) {
   .main__background {
     max-width: 100%;
@@ -769,7 +769,7 @@ body {
     margin: 0 auto 30px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
   .menu {
     display: none;
   }
