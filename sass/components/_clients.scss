@@ -16,11 +16,13 @@
         list-style-type: none;
         margin-left: -30px;
         margin-bottom: -30px;
+        justify-content: center;
     }
+    
     
     .clients__item {
         flex-basis: 50%;
-        justify-content: center;
+        
 }
 
     @media screen and (min-width: 768px) {
@@ -46,7 +48,7 @@
             object-fit: contain;
             fill: #afb1b8;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       
+            max-width: 170px;
     }
     
     .clients__link:hover, .clients__link:focus {
@@ -59,8 +61,8 @@
         display: flex;
         align-self: center;
         color: currentcolor;
-        width: 106px;
-        height: 60px;
+        width: 115px;
+        height: 65px;
       
     }
     .clients__image:hover, .clients__link:hover {
